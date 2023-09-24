@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name = "shipment-method")
+@Table(name = "shipment_method")
 @AllArgsConstructor(staticName = "of")
 @NoArgsConstructor
 public class ShipmentMethod extends BaseEntityWithUpdater {

@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "shipments")
-@AllArgsConstructor(staticName = "of")
+@AllArgsConstructor
 @NoArgsConstructor
 public class Shipment extends BaseEntityWithUpdater {
     private String code;
@@ -21,8 +21,8 @@ public class Shipment extends BaseEntityWithUpdater {
     private String toAddressId;
     private double price;
     private String method;
-    private String shipmentDate;
-    private String expectedDeliveryDate;
+    private long shipmentDate;
+    private long expectedDeliveryDate;
     @Enumerated(EnumType.STRING)
     private Status status;
 
